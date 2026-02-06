@@ -11,8 +11,13 @@
   --white-color: #fefefe;
   --primary-color: #18e299;
   --text-dim: #ffffffb3;
-  --brand-font: font-family: "Geist", sans-serif;
-  --text-font: font-family: "Inter", sans-serif;
+  --brand-font: "Geist", sans-serif;
+  --text-font: "Inter", sans-serif;
+}
+main {
+  background-color: var(--background-color);
+  font-family: var(--text-font);
+  color: var(--white-color);
 }
 a {
   color: var(--black-color);
@@ -27,7 +32,66 @@ li {
   font-family: var(--brand-font);
   color: var(--primary-color);
 }
-.container{
-    border: .5px solid #ffffff26 ;
-    border-radius: 1.5rem;
+.container {
+  border: 0.5px solid #ffffff26;
+  border-radius: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  font-family: var(--text-font);
+  z-index: 999;
+  padding: 1rem 1.5rem;
+  background-color: rgba(230, 224, 224, 0.129);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.navLogo {
+  margin-top: 4px;
+}
+.navMenu {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-items: center;
+  color: var(--white-color);
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+
+.navMenu li {
+  padding: 0 10px;
+  border: .6px solid rgba(0, 0, 0, 0);
+}
+
+.navActionBtn {
+  display: flex;
+  gap: 0.5rem;
+}
+.navActionBtn a {
+  padding: 5px 12px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 2rem;
+  font-size: 15px;
+  font-weight: 500;
+  border: .75px solid rgba(122, 118, 118, 0.074);
+}
+
+.navActionBtn a:first-child {
+  color: var(--white-color);
+  background-color: #0c0c0c26;
+  padding-top: 5px;
+}
+
+.navActionBtn a:last-child {
+  color: var(--background-color);
+  background-color: var(--white-color);
+  padding: 6.5px 12px;
 }
