@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #08090a;
+  --white-color: #fefefe;
+  --primary-color: #18e299;
+  --text-dim: #ffffffb3;
+  --brand-font: font-family: "Geist", sans-serif;
+  --text-font: font-family: "Inter", sans-serif;
+}
+a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.brandText {
+  font-family: var(--brand-font);
+  color: var(--primary-color);
+}
+.container{
+    border: .5px solid #ffffff26 ;
+    border-radius: 1.5rem;
+}
