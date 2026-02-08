@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:opsz,wght@14..32,100..900&display=swap");
 
 * {
   margin: 0;
@@ -15,12 +15,11 @@
   --text-font: "Inter", sans-serif;
 }
 main {
-  background-color: var(--background-color);
   font-family: var(--text-font);
   color: var(--white-color);
 }
 a {
-  color: var(--black-color);
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -48,7 +47,7 @@ header {
   z-index: 999;
   padding: 1rem 1.5rem;
   background-color: rgba(230, 224, 224, 0.129);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(10px);
 }
 .navLogo {
@@ -60,13 +59,12 @@ header {
   align-items: center;
   justify-items: center;
   color: var(--white-color);
-  font-family: var(--text-font);
   font-size: 15px;
 }
 
 .navMenu li {
   padding: 0 10px;
-  border: .6px solid rgba(0, 0, 0, 0);
+  border: 0.6px solid rgba(0, 0, 0, 0);
 }
 
 .navActionBtn {
@@ -81,7 +79,7 @@ header {
   border-radius: 2rem;
   font-size: 15px;
   font-weight: 500;
-  border: .75px solid rgba(122, 118, 118, 0.074);
+  border: 0.75px solid rgba(122, 118, 118, 0.074);
 }
 
 .navActionBtn a:first-child {
@@ -94,4 +92,127 @@ header {
   color: var(--background-color);
   background-color: var(--white-color);
   padding: 6.5px 12px;
+}
+.headerSpacer {
+  height: 4.25rem;
+}
+.heroSection {
+  position: relative;
+}
+.heroBackgroundImage {
+  position: absolute;
+  top: -5rem;
+  isolation: isolate;
+  left: 0;
+  width: 100%;
+  z-index: -999;
+}
+.heroSectionContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroCTA {
+  background-color: rgba(234, 233, 233, 0.207);
+  padding: 0.25rem 0.4rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  position: relative;
+  margin-top: 1.75rem;
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.heroCTA span:first-child {
+  background-color: rgb(36, 145, 82);
+  border-radius: 1rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
+}
+.heroCTA span:nth-child(2) {
+  font-weight: 500;
+  font-size: medium;
+  padding-right: 1.5rem;
+}
+.heroCTA span:last-child {
+  position: absolute;
+  top: 20%;
+  right: 2%;
+}
+
+.heroParagraphSection {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heroParagraphSection h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.heroParagraphSection p {
+  max-width: 29.5rem;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+.heroEmailContainer {
+  background-color: rgba(234, 233, 233, 0.207);
+  padding: 0.5rem 0 0.5rem 1rem;
+  border: 0.75px solid rgba(196, 196, 196, 0.424);
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25rem;
+  margin-top: 2rem;
+}
+.heroEmailContainer input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  color: white;
+  padding: 0.2rem 0 0 0;
+  font-size: 1.1rem;
+}
+.heroEmailContainer input::placeholder {
+  font-weight: 500;
+  opacity: 0.5;
+  color: var(--text-dim);
+  font-size: 1.1rem;
+}
+
+.heroEmailContainer button {
+  background-color: var(--white-color);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.heroUiImageContainer {
+  margin: 0 auto;
+  margin-top: 5rem;
+  overflow: hidden;
+  padding-top: 0 .2rem;
+  background-color: var(--background-color);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.heroUiImage {
+  object-fit: contain;
+  mask-repeat: no-repeat;
+  width: 100%;
+  
 }
