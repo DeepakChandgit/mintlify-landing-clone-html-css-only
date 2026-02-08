@@ -288,3 +288,15 @@ header {
   object-fit: contain;
   background-repeat: no-repeat;
 }
+
+.assistanceFeature{
+  background-color: var(--background-color);
+  padding: .5rem;
+  text-align: center;
+}
+
+.assistanceFeature .featureDescription{
+ max-width: 30rem;
+ margin: 0 auto;
+ color: var(--text-dim);
+}
