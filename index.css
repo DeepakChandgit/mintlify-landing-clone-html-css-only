@@ -387,3 +387,62 @@ header {
 .enterpriseReinventionSection .fourthContainer span:first-child {
   color: var(--white-color);
 }
+
+.customersSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--background-color);
+  padding: 5rem 0;
+}
+
+.customersSection .firstContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 3rem;
+}
+.customersSection .firstContainer h2 {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.customersSection .firstContainer p:first-of-type {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.customersSection .firstContainer p:last-of-type {
+  color: var(--text-dim);
+}
+
+.customersSection .secondContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  padding-left: 3rem;
+}
+
+.customersSection .secondContainer div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 80%;
+}
+.customersSection .secondContainer div img {
+  border-radius: 1rem;
+}
+.customersSection .secondContainer div {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+}
+.customersSection .thirdContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.customersSection .thirdContainer button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 100%;
+  border: none;
+}
