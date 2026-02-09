@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.body{
+  max-width: 1440px;
+}
 
 :root {
   --background-color: #08090a;
