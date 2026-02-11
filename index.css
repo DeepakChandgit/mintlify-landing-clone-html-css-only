@@ -525,3 +525,84 @@ header {
 .finalCTASection .secondContainer div a {
   margin-top: 1.5rem;
 }
+
+footer {
+  background-color: #141516;
+  border-top: 0.5px solid #222526;
+  padding: 0 1.5rem;
+}
+.footerSection .firstContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 1.5rem 1rem 1.5rem;
+  border: 0.5px solid #222526;
+  border-top: none;
+}
+.footerSection .firstContainer .brandLogoContainer {
+  display: flex;
+  align-items: center;
+}
+.footerSection .firstContainer .brandLogoContainer img {
+  height: 1.4rem;
+  margin-right: 0.2rem;
+}
+.footerSection .firstContainer .brandLogoContainer span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 0.15rem;
+}
+.footerSection .socialLogoContainer {
+  display: flex;
+  gap: 1rem;
+}
+.footerSection .socialLogoContainer img {
+  height: 1.3rem;
+  aspect-ratio: 1/1;
+}
+.footerSection .footerMenuSection {
+  padding: 2rem 1.5rem 4rem 1.5rem;
+  border: 0.5px solid #222526;
+  border-top: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.footerMenuContainer .footerMenuHeading {
+  color: var(--text-dim);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  gap: 1rem;
+}
+
+.thirdContainer {
+  border: 0.5px solid #222526;
+  border-top: none;
+  padding: 1rem 2.5rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.fourthContainer {
+  padding: 2.5rem 2.5rem 4rem 2.5rem;
+  border: 0.5px solid #222526;
+  border-top: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .8rem;
+  color: var(--text-dim);
+}
+.fourthContainer img{
+  height: 2.7rem;
+}
